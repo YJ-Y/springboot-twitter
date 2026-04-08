@@ -7,4 +7,4 @@ COPY build/libs/*.jar app.jar
 # 8080 포트 노출
 EXPOSE 8080
 # 애플리케이션 실행
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["sh", "-c", "sleep 10 && java -jar app.jar"]
